@@ -1,0 +1,22 @@
+{
+    "name": "phpfit/config",
+    "description": "Collect and provide configs from local files or config providers",
+    "version": "1.0.0",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpFit\\Config\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Iqbal Fauzi",
+            "email": "iqbalfawz@gmail.com"
+        }
+    ],
+    "require": {
+        "phpfit/file": "^1.0",
+        "psr/simple-cache": "^3.0"
+    }
+}
