@@ -1,7 +1,7 @@
 {
     "name": "phpfit/config",
     "description": "Collect and provide configs from local files or config providers",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "type": "library",
     "license": "MIT",
     "autoload": {

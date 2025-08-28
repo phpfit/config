@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Config
+ * @version 1.1.0
+ */
+
 namespace PhpFit\Config;
 
 use PhpFit\Config\Interfaces\ConfigProviderInterface;
@@ -8,6 +13,8 @@ use Psr\SimpleCache\CacheInterface;
 
 class Config
 {
+    public static Config $config;
+
     private array $configs;
 
     /**
@@ -18,6 +25,11 @@ class Config
      *  ?string $cache_name = 'phpfit-config'
      */
     private array $settings;
+
+    public static function get(string $name)
+    {
+        return self::$config->$name;
+    }
 
     public function __construct(array $settings)
     {

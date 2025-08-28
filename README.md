@@ -15,6 +15,10 @@ use PhpFit\Config\Config;
 
 $config = new Config($options);
 $host = $config->host;
+
+// To use it globally with static ::get
+Config::$config = $config;
+$host = Config::get('host');
 ```
 
 ## Options
